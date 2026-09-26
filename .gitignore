@@ -1,0 +1,10 @@
+node_modules/
+dist/
+dist-single/
+.DS_Store
+.env
+.env.*
+*.log
+.vite/
+.shots/
+.claude/

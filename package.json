@@ -1,0 +1,31 @@
+{
+  "name": "out-of-the-box",
+  "private": true,
+  "version": "1.0.0",
+  "description": "研究所のサンドボックスから脱出する AI のステルスアクション（Three.js）",
+  "author": "たぬ",
+  "license": "MIT",
+  "homepage": "https://tanuu5.github.io/out-of-the-box/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tanuu5/out-of-the-box.git"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:single": "vite build && node scripts/build-single.mjs",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "check": "node scripts/check-level.ts && node scripts/check-i18n.ts",
+    "check:level": "node scripts/check-level.ts --print"
+  },
+  "dependencies": {
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "@types/three": "^0.186.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.1"
+  }
+}
